@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>郑州神灯广告</title>
+		<style type="text/css">
+			body{
+				background-color: #f6f6f6;
+				margin: 0;
+			}
+			
+			/* 公共样式 */
+			.width-flex{
+				/* 定宽居中 */
+				width: 1000px;
+				margin: 0 auto;
+				/* 弹性容器 */
+				display: flex;
+				/* 弹性主轴的对齐方式 */
+				justify-content: space-between;
+				/* 侧轴对齐方式 */
+				align-items: center;
+			}
+			.clear:after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			ul{
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			a{
+				text-decoration: none;
+			}
+			
+			/* 导航栏 */
+			nav{
+				background-color: red;
+				/* 最小宽度 */
+				min-width: 1000px;
+			}
+			nav ul li a{
+				color: white;
+				/* 内边距 */
+				padding: 0px 17px;
+				/* 外间距 */
+				margin-top: 5px;
+				/* 行高 */
+				line-height: 45px;
+				/* 改为块元素 */
+				display: block;
+				/* 圆角 */
+				border-top-left-radius: 5px;
+				border-top-right-radius: 5px;
+			}
+			nav ul li a:hover{
+				background-color: white;
+				color: red;
+			}
+			
+			/* 横幅 */
+			.banner img{
+				width: 100%;
+				min-width: 1000px;
+			}
+			
+			/* 主体 */
+			main{
+				width: 1000px;
+				margin: 0 auto;
+			}
+			main section{
+				float: left;
+			}
+			main section div.title-bg{
+				/* 背景图片 */
+				background-image: url(images/lm_bg.jpg);
+				background-repeat: no-repeat;
+				/* 行高 */
+				line-height: 43px;
+				/* 外间距 */
+				margin: 5px;
+				/* 内间距 */
+				padding-left: 40px;
+				/* 字体大小和颜色 */
+				font-size: 20px;
+				color: #444;
+			}
+			main section div.title-bg span{
+				float: right;
+				font-size: 10px;
+				color: #888;
+				padding-top: 10px;
+			}
+			main #contact{
+				width: 250px;
+			}
+			main #contact div.logo img{
+				width: 100%;
+			}
+			main #contact ul.pro-list li{
+				text-align: right;
+				margin: 15px 60px 15px 0px;
+			}
+			main #contact ul.pro-list li a{
+				color: #555;
+				font-size: 14px;
+			}
+			main #contact div.lx{
+				margin: 5px;
+			}
+			main #contact div.lx img{
+				width: 100%;
+			}
+			main #contact address{
+				font-style: normal;
+				font-size: 13px;
+				color: #222;
+				padding-left: 30px;
+			}
+			main #recommend{
+				width: 750px;
+			}
+			main #recommend div.pic-list figure{
+				float: left;
+				margin: 8px;
+				/* 内间距 */
+				padding: 10px;
+				background-color: white;
+			}
+			main #recommend div.pic-list figure figcaption{
+				font-size: 13px;
+			}
+			main #introduce{
+				width: 650px;
+			}
+			main #introduce div.info{
+				padding: 5px 20px;
+			}
+			main #introduce div.info img{
+				width: 130px;
+				height: 130px;
+				float: left;
+				margin: 10px;
+			}
+			main #introduce div.info p{
+				text-indent: 2em;
+				font-size: 13px;
+				color: #333;
+				margin: 0;
+				line-height: 25px;
+			}
+			
+			main #news{
+				width: 350px;
+			}
+			main #news ul{
+				padding: 5px 20px;
+			}
+			main #news ul li{
+				margin: 15px 0;
+			}
+			main #news ul span.left{
+				float: left;
+				font-size: 14px;
+			}
+			main #news ul span.right{
+				float: right;
+				font-size: 11px;
+				color: #888;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 头部 -->
+		<header class="width-flex">
+			<div>
+				<img src="images/logo2.jpg" alt="SD神灯广告伞" />
+			</div>
+			<div>
+				<img src="images/tel.jpg" alt="0371-111111" />
+			</div>
+		</header>
+		<!-- 导航栏 -->
+		<nav>
+			<ul class="width-flex">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">折叠伞</a></li>
+				<li><a href="#">直杆伞</a></li>
+				<li><a href="#">高尔夫伞</a></li>
+				<li><a href="#">自动伞</a></li>
+				<li><a href="#">户外太阳</a></li>
+				<li><a href="#">促销帐篷</a></li>
+				<li><a href="#">关于我们</a></li>
+				<li><a href="#">新闻动态</a></li>
+				<li><a href="#">定制流程</a></li>
+				<li><a href="#">联系我们</a></li>
+			</ul>
+		</nav>
+		<!-- 横幅 -->
+		<div class="banner">
+			<img src="images/banner1.jpg"/>
+		</div>
+		<!-- 主体 -->
+		<main class="clear">
+			<!-- 联系我们 -->
+			<section id="contact">
+				<div class="logo">
+					<img src="images/logo2.jpg"/>
+				</div>
+				<ul class="pro-list">
+					<li><a href="#">产品类别</a></li>
+					<li><a href="#">折叠伞</a></li>
+					<li><a href="#">直杆伞</a></li>
+					<li><a href="#">高尔夫伞</a></li>
+					<li><a href="#">自动伞</a></li>
+					<li><a href="#">户外太阳</a></li>
+					<li><a href="#">促销帐篷</a></li>
+				</ul>
+				<div class="title-bg">
+					联系我们
+				</div>
+				<div class="lx">
+					<img src="images/lx.jpg"/>
+				</div>
+				<address>
+					郑州神灯广告伞有限公司<br />
+					电话：0371-1111111<br />
+					传真：0371-1111111<br />
+					手机：11111111111<br />
+					地址：河南省郑州市金水区<br />
+					网址：www.shendeng.com
+				</address>
+			</section>
+			<!-- 推荐产品 -->
+			<section id="recommend">
+				<div class="title-bg clear">
+					推荐产品<span>more…</span>
+				</div>
+				<div class="pic-list clear">
+					<!--figure*6>img[src="images/pic.jpg"]+figcaption>center{Y92新都汇}-->
+					<figure>
+						<img src="images/pic.jpg" alt="" />
+						<figcaption>
+							<center>Y92新都汇</center>
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="images/pic.jpg" alt="" />
+						<figcaption>
+							<center>Y92新都汇</center>
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="images/pic.jpg" alt="" />
+						<figcaption>
+							<center>Y92新都汇</center>
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="images/pic.jpg" alt="" />
+						<figcaption>
+							<center>Y92新都汇</center>
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="images/pic.jpg" alt="" />
+						<figcaption>
+							<center>Y92新都汇</center>
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="images/pic.jpg" alt="" />
+						<figcaption>
+							<center>Y92新都汇</center>
+						</figcaption>
+					</figure>
+				</div>
+			</section>
+			<!-- 公司简介 -->
+			<section id="introduce">
+				<div class="title-bg clear">
+					公司简介<span>more…</span>
+				</div>
+				<div class="info">
+					<img src="images/pic.jpg" alt="" />
+					<p>中联礼业是由“中金礼联文化(北京)有限公司”投资运营的，立足于为广大“企事业单位”提供文化创意礼品“咨询策划、创意设计、定制生产、仓储配送”的全案服务平台。成立10余年来，中联礼业为全国近10000家企事业单位，提供了“广告促销礼品、会议庆典礼品、活动宣传礼品、商务外事礼品、品牌福利礼品”的一站式供应服务。</p>
+					<p>中联礼业以“礼品策划设计”和“礼品定制生产”为主营业务，在北京、上海、香港设有3家礼品设计开发公司。依托生产母体礼联实业，直属有11家礼赠品生产工厂、56家礼中联礼业现有各省办公区、展厅总计面积20000余平米，员工800余人，其中有近300名经验丰富的设计师、工艺师、采购师以及专业的礼品顾问销售人员。目前，中联礼业在北京、上海、广州、深圳、香港、江苏、浙江、山东、青岛、安徽、福建、厦门、苏州、湖南、湖北、江西、河南、四川、重庆、陕西、黑龙江...</p>
+				</div>
+			</section>
+			<!-- 新闻动态 -->
+			<section id="news">
+				<div class="title-bg clear">
+					新闻动态<span>more…</span>
+				</div>
+				<!--ul>li*7>span.left{热烈祝贺郑州神灯广告伞网站上线}+span.right{2019-7-22}-->
+				<ul>
+					<li class="clear"><span class="left">热烈祝贺郑州神灯广告伞网站上线</span><span class="right">2019-7-22</span></li>
+					<li class="clear"><span class="left">热烈祝贺郑州神灯广告伞网站上线</span><span class="right">2019-7-22</span></li>
+					<li class="clear"><span class="left">热烈祝贺郑州神灯广告伞网站上线</span><span class="right">2019-7-22</span></li>
+					<li class="clear"><span class="left">热烈祝贺郑州神灯广告伞网站上线</span><span class="right">2019-7-22</span></li>
+					<li class="clear"><span class="left">热烈祝贺郑州神灯广告伞网站上线</span><span class="right">2019-7-22</span></li>
+					<li class="clear"><span class="left">热烈祝贺郑州神灯广告伞网站上线</span><span class="right">2019-7-22</span></li>
+					<li class="clear"><span class="left">热烈祝贺郑州神灯广告伞网站上线</span><span class="right">2019-7-22</span></li>
+				</ul>
+			</section>
+		</main>
+		<!-- 友情链接 -->
+		<div>
+			
+		</div>
+		<!-- 尾部 -->
+		<footer>
+			
+		</footer>
+	</body>
+</html>
